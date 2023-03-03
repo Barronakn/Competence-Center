@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Monoton&family=Pacifico&family=Thasadith&display=swap");
+
+.d-flex {
+  @apply flex justify-between;
+}
+
+.nav {
+  @apply mt-2 text-lg font-semibold font-primary text-gray-600;
+}
+
+.cursor {
+  @apply cursor-pointer;
+}
+
+.nav ul li a:hover {
+  color: #2dd4a4;
+}
+
+.btn {
+  color: #fff;
+  background-color: #2dd4a4;
+  border: 2px solid #2dd4a4;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #2dd4a4;
+}
+
+.iconMenu {
+    border: 2px solid black;
+    display: none;
+}
+
+//Responsivité
+
+@media screen and (max-width: 1190px) {
+  .iconMenu {
+    display: block;
+  }
+  .none {
+    display: none;
+  }
+  .nav {
+    text-align: center;
+  }
+  .nav-resp {
+    margin: 0 auto;
+  }
+}

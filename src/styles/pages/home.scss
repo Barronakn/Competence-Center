@@ -1,0 +1,125 @@
+.svg-input {
+  border: 1px solid #b5b5b3;
+  border-radius: 6px;
+}
+
+.svg-input:hover {
+  border: 1px solid rgb(0, 149, 255);
+}
+
+.w56 {
+  width: 56%;
+}
+
+.w42 {
+  width: 42%;
+}
+
+.line {
+  line-height: 70px;
+}
+
+.auto {
+  margin: 0 auto;
+}
+
+.titre {
+  width: 350px;
+}
+
+.box-shadow {
+  box-shadow: 15px 40px 50px 20px #b5b5b3;
+}
+
+//Responsivité
+
+@media screen and (max-width: 1024px) {
+  .item-t {
+    font-size: 40px;
+  }
+
+  .btn {
+    width: 150px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .item-1,
+  .item-2,
+  .item-3,
+  .position {
+    display: block;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+  .btn {
+    width: 150px;
+    padding: 10px;
+  }
+
+  .item-2 .right {
+    margin-left: 0;
+  }
+
+  .item-2 .right h1 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .item-3 {
+    margin: auto 15px;
+  }
+
+  .title {
+    text-align: justify;
+    line-height: 0;
+    width: 100%;
+  }
+
+  .title h1 {
+    font-size: 25px;
+  }
+
+  .title p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .title {
+    width: 200px;
+  }
+  .title h1 {
+    width: 150px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .home {
+    margin: auto 15px;
+  }
+  .right img {
+    width: 350px;
+    height: 300px;
+  }
+
+  .left {
+    margin: 0 auto;
+  }
+
+  .title {
+    width: 100%;
+  }
+  .title h1 {
+    width: 100%;
+    text-align: center;
+  }
+}

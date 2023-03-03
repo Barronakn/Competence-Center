@@ -1,0 +1,49 @@
+.item-5 {
+  padding-bottom: 60px;
+}
+
+@media screen and (max-width: 1024px) {
+  .imgContact1 {
+    margin: 0 auto;
+  }
+
+  .item-5 {
+    display: block;
+  }
+
+  .item-5 .title {
+    width: 100%;
+    margin: auto 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .item-5 {
+    margin: auto -80px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item-5 .title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .item-5 .title h1 {
+    font-size: 30px;
+    width: 100%;
+  }
+
+  .item-5 .title p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .item-5 {
+    margin: auto -10px;
+  }
+}
