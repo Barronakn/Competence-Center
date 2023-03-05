@@ -1,9 +1,14 @@
 import { NavLink } from "react-router-dom";
-
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Item2 = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div className="item-2 mt-20 flex justify-between">
-      <div className="left w56">
+      <div data-aos="zoom-in" className="left w56">
         <img src="./section-2.png" alt="" />
       </div>
       <div className="right w42 ml-16 mt-16">

@@ -23,11 +23,9 @@ const componentName = (props) => {
         <div data-aos="fade-up">
           <Item2 />
         </div>
+        <Item3 />
         <div data-aos="fade-up">
-          <Item3 />
-        </div>
-        <div data-aos="fade-up">
-          <Item4 />
+          <Item4 show={3}  />
         </div>
         <div data-aos="fade-up">
           <Item5 />

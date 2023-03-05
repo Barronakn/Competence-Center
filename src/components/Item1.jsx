@@ -1,6 +1,11 @@
 import { NavLink } from "react-router-dom";
-
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Item1 = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div className="item-1 mt-24 flex justify-around">
       <div data-aos="fade-up">
@@ -46,7 +51,7 @@ const Item1 = () => {
           </form>
         </div>
       </div>
-      <div data-aos="fade-up">
+      <div data-aos="zoom-in">
         <div className="right mt-10">
           <img src="./section-1.png" alt="" />
         </div>

@@ -3,16 +3,16 @@
 }
 
 .item h1 {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .item #img {
-  width: 215px;
+  width: 260px;
 }
 
 .item {
-  width: 250px;
-  height: 400px;
+  width: 295px;
+  height: 425px;
 }
 
 .shadow-btn {
@@ -21,7 +21,26 @@
 }
 
 .pagination {
-  position: relative;
+  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.previous {
+  @apply text-primary cursor p-3 px-5 shadow-btn  ;
+}
+
+.next {
+  @apply text-primary cursor p-3 px-5 shadow-btn   m-0;
+}
+
+.item-4 ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.number {
+  display: none;
 }
 
 //
