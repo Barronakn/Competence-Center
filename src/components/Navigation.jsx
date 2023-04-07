@@ -1,17 +1,11 @@
 import { NavLink } from "react-router-dom";
-import { useState, useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { useState } from "react";
 
 const Navigation = () => {
   const [show, setShow] = useState(false);
   const handleShow = () => {
     setShow(!show);
   };
-
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
 
   return (
     <div className="content flex justify-between mt-7">
@@ -50,35 +44,36 @@ const Navigation = () => {
         </div>
       </div>
       {show ? (
-        <div data-aos="fade-down" className="w-full">
-          <div className="nav bg-primary py-10 z-auto">
-            <ul className="pt-5">
-              <li className="py-2 text-white">
-                <NavLink className="cursor" to="/about">
-                  À propos de nous
-                </NavLink>
-              </li>
-              <li className="py-2 text-white">
-                <NavLink className="cursor" to="/cours">
-                  Cours
-                </NavLink>
-              </li>
-              <li className="py-2 text-white">
-                <NavLink className="cursor" to="/ressources">
-                  Ressources
-                </NavLink>
-              </li>
-              <li className="py-2 text-white">
-                <NavLink className="cursor" to="/learn">
-                  Apprentissage en ligne
-                </NavLink>
-              </li>
-            </ul>
-          </div>
+        <div
+          data-aos="fade-down"
+          className="nav-resp w-full bg-primary py-10 z-auto"
+        >
+          <ul className="pt-5">
+            <li className="py-2 text-white">
+              <NavLink className="cursor" to="/about">
+                À propos de nous
+              </NavLink>
+            </li>
+            <li className="py-2 text-white">
+              <NavLink className="cursor" to="/cours">
+                Cours
+              </NavLink>
+            </li>
+            <li className="py-2 text-white">
+              <NavLink className="cursor" to="/ressources">
+                Ressources
+              </NavLink>
+            </li>
+            <li className="py-2 text-white">
+              <NavLink className="cursor" to="/learn">
+                Apprentissage en ligne
+              </NavLink>
+            </li>
+          </ul>
         </div>
       ) : null}
       <svg
-        className="iconMenu w-10 h-10"
+        className="iconMenu w-14 h-10"
         onClick={handleShow}
         xmlns="http://www.w3.org/2000/svg"
         fill="none"

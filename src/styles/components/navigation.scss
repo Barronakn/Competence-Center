@@ -28,11 +28,17 @@
 }
 
 .iconMenu {
-    border: 2px solid black;
-    display: none;
+  border: 2px solid black;
+  display: none;
 }
 
 //Responsivité
+
+@media screen and (min-width: 1190px) {
+  .nav-resp {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 1190px) {
   .iconMenu {
@@ -41,10 +47,7 @@
   .none {
     display: none;
   }
-  .nav {
-    text-align: center;
-  }
   .nav-resp {
-    margin: 0 auto;
+    text-align: center;
   }
 }

@@ -8,6 +8,7 @@ import Item5 from "../components/Item5";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { motion } from "framer-motion";
 
 const componentName = (props) => {
   useEffect(() => {
@@ -16,16 +17,19 @@ const componentName = (props) => {
   return (
     <div>
       <div className="mx-20 home">
-        <div data-aos="flip-up">
+        <motion.div
+          initial={{ scaleY: 0, opacity: 0 }}
+          whileInView={{ scaleY: 1, opacity: 1 }}
+        >
           <Navigation />
-        </div>
+        </motion.div>
         <Item1 />
         <div data-aos="fade-up">
           <Item2 />
         </div>
         <Item3 />
         <div data-aos="fade-up">
-          <Item4 show={3}  />
+          <Item4 show={3} />
         </div>
         <div data-aos="fade-up">
           <Item5 />
