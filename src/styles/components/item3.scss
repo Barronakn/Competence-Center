@@ -1,0 +1,23 @@
+@media screen and (max-width: 768px) {
+  .item-3 .title h1,
+  .item-3 .title p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .item-3 .title {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .item-3 .left h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .item-3 .left p {
+    font-size: 15px;
+  }
+}

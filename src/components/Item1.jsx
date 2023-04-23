@@ -20,7 +20,7 @@ const Item1 = () => {
             d'accord non dis sûr autour d'une graine.
           </p>
           <form className="mt-10 flex" action="">
-            <div className="svg-input w-full h-14 p-4 flex">
+            <div className="svg-input gap-5 w-full h-14 p-4 flex">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

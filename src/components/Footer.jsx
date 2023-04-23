@@ -22,7 +22,7 @@ const Footer = () => {
             dis sûr.
           </p>
         </div>
-        <div className="footer-link flex">
+        <div className="footer-link flex gap-10">
           <div data-aos="fade-up">
             <div className="flex link flex-col pr-5">
               <h1 className="text-white pb-2 text-xl font-primary">

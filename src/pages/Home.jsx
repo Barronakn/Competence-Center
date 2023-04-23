@@ -23,7 +23,8 @@ const componentName = (props) => {
         >
           <Navigation />
         </motion.div>
-        <Item1 />        <div data-aos="fade-up">
+        <Item1 />{" "}
+        <div data-aos="fade-up">
           <Item2 />
         </div>
         <Item3 />
