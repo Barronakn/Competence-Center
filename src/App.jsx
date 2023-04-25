@@ -6,7 +6,7 @@ const App = () => {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/skillhub" element={<Home />} />
+          <Route path="/Competence-Center" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </div>
