@@ -10,7 +10,7 @@ const Navigation = () => {
   return (
     <div className="content flex justify-between mt-7">
       <div className="logo">
-        <NavLink to="/" className="cursor">
+        <NavLink to="/Competence-Center" className="cursor">
           <img src="./logo.png" alt="Logo" />
         </NavLink>
       </div>
